@@ -1,3 +1,7 @@
+:root {
+    --background-color: #ddd --
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,11 +17,12 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
 
 h1 {
-    color: darkblue;
+    color: rgb(5, 5, 68);
+    padding: .5rem;
 }
 
 img {
@@ -35,7 +40,7 @@ p {
 
 main {
     max-width: 800px;
-
+    padding: 25px;
 }
 
 main img {
