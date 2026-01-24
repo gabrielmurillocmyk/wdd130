@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #055a05;
+    --primary-color: #011601;
     /* forest greem */
     --secondary-color: #f4a261;
     /*warn sand*/
@@ -38,6 +38,7 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 nav,
@@ -81,4 +82,12 @@ article {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+.hero h1 {
+    position: absolute;
+}
+
+.hero article {
+    position: absolute;
 }
