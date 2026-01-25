@@ -1,8 +1,8 @@
 :root {
     --primary-color: #011601;
-    /* forest greem */
+    /* forest green */
     --secondary-color: #f4a261;
-    /*warn sand*/
+    /*warm sand*/
     --accent1-color: #264653;
     /*dark slate blue*/
     --accent2-color: #e9c46a;
@@ -34,7 +34,7 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -43,6 +43,7 @@ h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     background-color: var(--secondary-color);
+    text-align: center;
 }
 
 nav,
@@ -55,16 +56,6 @@ article {
 
 .socialmedia a {
     text-decoration: none;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 h1 {
@@ -83,6 +74,16 @@ article {
 
 }
 
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .hero article img {
     float: right;
     width: 125px;
@@ -90,8 +91,27 @@ article {
 
 .hero h1 {
     position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: var(--accent1-color);
+    color: #fff;
+    border-radius: 6px;
+
 }
 
 .hero article {
     position: absolute;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    bottom: 20px;
+    background-color: var(--secondary-color);
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    max-width: 90%;
+    opacity: 0.8;
 }
