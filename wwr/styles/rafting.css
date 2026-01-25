@@ -12,8 +12,12 @@
 }
 
 header {
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
     color: var(--accent2-color);
+}
+
+header a {
+    color: #fff;
 }
 
 * {
