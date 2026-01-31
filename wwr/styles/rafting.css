@@ -18,7 +18,7 @@ header {
 }
 
 header a {
-    color: #fff;
+    color: var(--article1-color);
 }
 
 * {
@@ -34,7 +34,7 @@ body {
 
 header,
 footer {
-    width: 95%;
+    width: 98%;
     margin: 0 auto;
 }
 
@@ -46,7 +46,7 @@ main {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: #fff;
+    color: var(--article1-color);
     background-color: var(--accent1-color);
     text-align: center;
 }
@@ -96,7 +96,7 @@ article {
     transform: translateX(-50%);
     padding: 16px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.7;
     background-color: var(--accent1-color);
     color: var(--article1-color);
     border-radius: 6px;
@@ -105,17 +105,17 @@ article {
 .hero article {
     position: absolute;
     color: var(--article1-color);
-    bottom: 20px;
+    bottom: 50px;
     background-color: var(--secondary-color);
-    padding: 16px;
-    border-radius: 8px;
-    max-width: 90%;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 100%;
     opacity: 0.8;
 }
 
 .hero article img {
     float: right;
-    width: 150px;
+    width: 200px;
     margin-left: 15px;
 
 }
@@ -161,7 +161,7 @@ article {
 .adventure-repositorium {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 20px;
     padding: 15px;
     color: var(--primary-color);
 }
