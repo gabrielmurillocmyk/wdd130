@@ -71,7 +71,7 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--article1-color);
 }
 
 article {
@@ -140,7 +140,7 @@ article {
 }
 
 .site-header nav a {
-    color: white;
+    color: var(--article1-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -150,7 +150,6 @@ article {
     grid-template-columns: 1fr auto 1fr;
     gap: 20px;
     align-items: center;
-    color: var(--primary-color);
 }
 
 .history-layout img {
@@ -163,7 +162,8 @@ article {
     display: flex;
     justify-content: space-between;
     gap: 15px;
-    padding: 15px
+    padding: 15px;
+    color: var(--primary-color);
 }
 
 .adventure-repositorium figure {
