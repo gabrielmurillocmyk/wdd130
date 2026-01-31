@@ -8,7 +8,7 @@
     --accent2-color: #e9c46a;
     /*light golden yellow*/
     --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -162,6 +162,7 @@ article {
     display: flex;
     justify-content: space-between;
     gap: 15px;
+    padding: 15px
 }
 
 .adventure-repositorium figure {
