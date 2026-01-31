@@ -125,7 +125,7 @@ article {
     grid-template-columns: auto 1fr;
     align-items: center;
     padding: 10px 10px;
-    background-color: #004466;
+    background-color: var(--accent1-color);
 }
 
 .site-header img {
@@ -150,6 +150,7 @@ article {
     grid-template-columns: 1fr auto 1fr;
     gap: 20px;
     align-items: center;
+    color: var(--primary-color);
 }
 
 .history-layout img {
