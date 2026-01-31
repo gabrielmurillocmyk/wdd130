@@ -32,9 +32,13 @@ body {
 }
 
 header,
-main,
 footer {
-    width: 90%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+main {
+    width: 98%;
     margin: 0 auto;
 }
 
@@ -70,7 +74,7 @@ h1 {
 }
 
 article {
-    position: absolute;
+    position: relative;
 
 }
 
@@ -84,11 +88,6 @@ article {
     height: auto;
 }
 
-.hero article img {
-    float: right;
-    width: 125px;
-}
-
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -100,7 +99,6 @@ article {
     background-color: var(--accent1-color);
     color: #fff;
     border-radius: 6px;
-
 }
 
 .hero article {
@@ -111,7 +109,87 @@ article {
     background-color: var(--secondary-color);
     padding: 16px;
     border-radius: 8px;
-    display: flex;
     max-width: 90%;
     opacity: 0.8;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    margin-left: 15px;
+
+}
+
+.site-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004466;
+}
+
+.site-header img {
+    max-height: 100px;
+}
+
+.site-header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+}
+
+.site-header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.history-layout {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-layout img {
+    padding: 15px;
+    width: 300px;
+
+}
+
+.adventure-repositorium {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.adventure-repositorium figure {
+    text-align: center;
+    flex: 1;
+}
+
+.adventure-repositorium img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #122b38;
+    color: white;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 24px;
+    height: 24px;
 }
