@@ -1,12 +1,13 @@
 :root {
     --primary-color: #011601;
     /* forest green */
-    --secondary-color: #f4a261;
+    --secondary-color: #532805;
     /*warm sand*/
     --accent1-color: #264653;
     /*dark slate blue*/
     --accent2-color: #e9c46a;
     /*light golden yellow*/
+    --article1-color: #ddd;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -103,7 +104,7 @@ article {
 
 .hero article {
     position: absolute;
-    color: var(--primary-color);
+    color: var(--article1-color);
     bottom: 20px;
     background-color: var(--secondary-color);
     padding: 16px;
