@@ -103,7 +103,6 @@ article {
 
 .hero article {
     position: absolute;
-    background-color: var(--accent2-color);
     color: var(--primary-color);
     bottom: 20px;
     background-color: var(--secondary-color);
@@ -124,12 +123,12 @@ article {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: #004466;
 }
 
 .site-header img {
-    max-height: 100px;
+    max-height: 90px;
 }
 
 .site-header nav ul {
