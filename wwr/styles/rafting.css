@@ -267,6 +267,7 @@ article {
     display: flex;
     justify-content: space-between;
     gap: 90px;
+    width: 80%;
 }
 
 .team-members figure {
@@ -278,7 +279,6 @@ article {
     width: 100%;
     max-width: 250px;
     height: auto;
-    border-radius: 50%;
     border: 3px solid var(--accent1-color);
     margin: 0 auto;
 }
@@ -287,4 +287,24 @@ article {
     margin-top: 8px;
     font-weight: bold;
     color: var(--accent1-color);
+}
+
+.contact-form button {
+    padding: 14px 20px;
+    background-color: var(--accent1-color);
+    color: var(--article1-color);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+    color: var(--article1-color);
+    transform: scale(1.05);
+
 }
