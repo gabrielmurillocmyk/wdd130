@@ -3,13 +3,16 @@
     /* forest green */
     --secondary-color: #532805;
     /*warm sand*/
-    --accent1-color: #264653;
+    --accent1-color: #05222e;
     /*dark slate blue*/
     --accent2-color: #e9c46a;
     /*light golden yellow*/
-    --article1-color: #ddd;
+    --article1-color: #f0f8f8e5;
+    --background-button-color: #050513;
+    --table-background-color: #064b91;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --subtext-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
@@ -95,7 +98,7 @@ article {
     transform: translateX(-50%);
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.8;
     background-color: var(--accent1-color);
     color: var(--article1-color);
     border-radius: 6px;
@@ -136,6 +139,7 @@ article {
     justify-content: flex-end;
     gap: 20px;
     list-style: none;
+    font-size: 1.2rem;
 }
 
 .site-header nav a {
@@ -201,11 +205,17 @@ article {
     text-align: center;
     margin: 20px auto;
     padding: 5px;
+    font-size: 1.2rem;
 }
 
 .company-info h2 {
     color: var(--article1-color);
     margin-bottom: 12px;
+
+}
+
+.company-info p {
+    margin: 0% auto;
 }
 
 .contact-layout {
@@ -224,6 +234,8 @@ article {
     flex-direction: column;
     gap: 20px;
     padding: 40px;
+    background-color: var(--article1-color);
+    opacity: 0.9;
 }
 
 .contact-form fieldset {
@@ -233,7 +245,6 @@ article {
     gap: 8px;
 }
 
-/* Team section */
 .team {
     display: flex;
     justify-content: center;
@@ -250,7 +261,8 @@ article {
 
 .team figure {
     text-align: center;
-    max-width: 200px;
+    max-width: 350px;
+    height: 400px;
 }
 
 .team img {
@@ -276,9 +288,8 @@ article {
 }
 
 .team-members img {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
+    max-width: 450px;
+    height: 275px;
     border: 3px solid var(--accent1-color);
     margin: 0 auto;
 }
@@ -287,6 +298,7 @@ article {
     margin-top: 8px;
     font-weight: bold;
     color: var(--accent1-color);
+    font-size: 1.2rem;
 }
 
 .contact-form button {
@@ -306,5 +318,329 @@ article {
     background-color: var(--secondary-color);
     color: var(--article1-color);
     transform: scale(1.05);
+}
 
+.btn {
+    position: absolute;
+    top: 60%;
+    right: 42%;
+    padding: 1rem 1.5rem;
+    font-size: 2.5rem;
+    background-color: var(--background-button-color);
+    color: var(--article1-color);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 7px;
+    margin-bottom: 0.8rem;
+
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--article1-color);
+    opacity: 0.8;
+}
+
+.hero-subtext {
+    position: absolute;
+    top: 69%;
+    left: 35%;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-family: var(--subtext-font);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+/* Featured Grid Section */
+.grid-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 10px auto;
+    max-width: 95%;
+
+}
+
+.grid-item {
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    color: var(--primary-color);
+
+}
+
+.grid-item img {
+    max-width: 440px;
+    margin-bottom: 12px;
+    padding: 4px;
+    box-shadow: 0 4px 10px var(--primary-color)
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.grid-item h3 {
+    color: var(--accent1-color);
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 1.8rem;
+}
+
+.grid-item a {
+    color: var(--article1-color);
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--accent1-color);
+    padding: 6px;
+}
+
+.grid-item p {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+    font-family: var(--subtext-font);
+    font-style: italic;
+}
+
+.newsletter {
+    background: linear-gradient(225deg, var(--accent1-color), var(--primary-color));
+    color: var(--article1-color);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 650px;
+    box-shadow: 0 6px 15px var(--background-button-color);
+}
+
+.newsletter h2 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter input {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.newsletter input:focus {
+    outline: none;
+    box-shadow: 0 0 8px var(--accent2-color);
+}
+
+.newsletter button {
+    padding: 14px;
+    background-color: var(--article1-color);
+    color: var(--accent1-color);
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-style: oblique;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+.scenic {
+    position: relative;
+    margin-top: 45px;
+}
+
+.scenic img {
+    width: 1050px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    color: var(--article1-color);
+    padding: 1rem;
+    max-width: 650px;
+    height: auto;
+    border-radius: 6px;
+    font-size: 1.2rem;
+}
+
+.overlay-text form {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit {
+    padding: 14px 28px;
+    background-color: var(--article1-color);
+    color: var(--accent1-color);
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    background-color: var(--secondary-color);
+    color: var(--article1-color);
+}
+
+/*Trips- page */
+.trips img {
+    max-width: 100%;
+    position: relative;
+}
+
+.hero-subtext1 {
+    position: absolute;
+    top: 78%;
+    left: 53%;
+    font-size: 1.3rem;
+    background-color: var(--background-button-color);
+    opacity: 0.9;
+    color: var(--article1-color);
+    font-family: var(--body-font);
+    padding: 10px 10px;
+    border-radius: 4px;
+}
+
+.hero-trips h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-trips p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.trip {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.trip img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.trip:hover img {
+    transform: scale(1.05);
+}
+
+.trip-info {
+    background-color: var(--background-button-color);
+    opacity: 0.9;
+    color: var(--article1-color);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid var(--article1-color);
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--table-background-color);
+    color: var(--article1-color);
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: var(--article1-color);
+}
+
+/* Bottom CTA */
+.cta-bottom {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: var(--background-button-color);
+    color: var(--article1-color);
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px var(--table-background-color);
+}
+
+.btn-snd {
+    position: absolute;
+    top: 60%;
+    right: 17%;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    background-color: var(--background-button-color);
+    color: var(--article1-color);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+
+}
+
+.btn-snd:hover {
+    background-color: var(--table-background-color);
+    color: var(--article1-color);
+    opacity: 0.8;
+}
+
+.cta-bottom p {
+    font-size: 1.2rem;
+    font-style: oblique;
 }
